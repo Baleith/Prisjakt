@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700,700i,800,800i,900,900i|Raleway:400,500,600,700,700i,800,800i,900,900i');
+
+html {
+  text-size-adjust: 100%;
+  box-sizing: border-box;
+  height: 100%;
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+}
+body {
+  margin: 0;
+  min-height: 100%;
+}
+#___gatsby {
+  background-color: #eee;
+  height: 100%;
+}
+#app {
+  box-shadow: 0 -6px 8px rgba(0,0,0,.2);
+  width: 70%;
+  margin: auto;
+  background-color: #ffffff;
+  display: grid;
+  justify-items: center;
+  grid-template-rows: 15vh 5vh minmax(80vh, 1fr);
+  grid-template-columns: 100%;
+}
+
+#search {
+  grid-area: 1 / 1 / span 1 / span 1;
+}
+#filter {
+  grid-area: 2 / 1 / span 1 / span 1;
+}
+
+#content {
+  grid-area: 3 / 1 / span 1 / span 1;
+}
+
+a, h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif;
+}
+h1, h2, h3 {
+  color: #111a32;
+}
+a {
+ color: #0178e5;
+ text-decoration: none;
+}
+p {
+  color: #555;
+}

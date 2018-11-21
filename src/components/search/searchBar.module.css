@@ -1,0 +1,21 @@
+.container {
+  background-color: #4895b6;
+  width: 100%;
+  padding-bottom: 15px;
+  display: flex;
+  flex-flow: wrap;
+}
+.titleContainer {
+}
+.title {
+  color: #ffffff;
+  margin: 10px 0 0 15px;
+}
+.formContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.form {
+  align-self: flex-end;
+}

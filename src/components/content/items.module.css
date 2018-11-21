@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  flex-flow: wrap;
+  width: 100%;
+}
+.item {
+  max-width: 25%;
+}
+
+.img {
+  width: 100%;
+  height: 200px;
+}
+
+.body ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+.body li {
+}
+
+.price {
+  padding-top: 15px;
+  font-size: 1.5rem;
+}
+.name {
+  height: 2rem;
+  line-height: 1.2rem;
+}
+.store {
+  font-size: 0.85rem;
+}

@@ -1,0 +1,38 @@
+.inputText {
+  width: 360px;
+		background: #fff;
+		color: #a3a3a3;
+		font: inherit;
+		border: 0;
+		outline: 0;
+    padding: 16px 12px;    
+    border: 1px solid #ddd;
+}
+
+.inputText::placeholder {
+  color: #B0BEC5;
+}
+
+.inputText:focus {
+  outline: none;
+  box-shadow: 0.2rem 0.8rem 1.6rem var(--colorPrimary600);
+}
+
+.inputText:placeholder-shown + .Input-label {
+  visibility: hidden;
+  z-index: -1;
+}
+
+.inputText:not(:placeholder-shown) + .Input-label,
+.inputText:focus:not(:placeholder-shown) + .Input-label {
+  visibility: visible;
+  z-index: 1;
+  opacity: 1;
+  transform:
+    translate3d(0, var(--labelTransformedPosY), 0)
+    scale(var(--labelScaleFactor));
+  transition:
+    transform var(--inputTransitionDuration),
+    visibility 0ms,
+    z-index 0ms;
+}
